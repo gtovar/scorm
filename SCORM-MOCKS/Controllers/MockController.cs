@@ -13,5 +13,9 @@ namespace SCORM_MOCKS.Controllers
         {
             return View();
         }
+        public ActionResult General()
+        {
+            return View();
+        }
     }
 }

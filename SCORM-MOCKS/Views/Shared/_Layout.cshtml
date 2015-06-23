@@ -14,23 +14,29 @@
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body class="skin-blue">
+
     <div class="pace  pace-inactive">
         <div class="pace-progress" style="width: 100%;" data-progress-text="100%" data-progress="99">
             <div class="pace-progress-inner"></div>
         </div>
         <div class="pace-activity"></div>
     </div>
-@Html.Partial(partialViewName: "_Header")
-    <div class="container body-content">
-        @RenderBody()
-        @Html.ActionLink("Application name", "Index", "Mock", new { area = "" }, new { @class = "navbar-brand" })
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+
+    @Html.Partial(partialViewName: "_Header")
+
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+            @RenderBody()
+            @Html.ActionLink("Application name", "Index", "Mock", new { area = "" }, new { @class = "navbar-brand" })
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/demo.js"></script>
+
 </body>
 </html>
