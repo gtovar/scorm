@@ -16,7 +16,17 @@ namespace SCORM_MOCKS
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Mock", action = "Index", id = UrlParameter.Optional }
+                defaults: new {controller = "Mock", action = "Index", id = UrlParameter.Optional}
+            );
+            routes.MapRoute(
+                "General",                                              // Route name
+                "{controller}/{action}/{id}",                           // URL with parameters
+                new { controller = "Mock", action = "General", id = "" }  // Parameter defaults
+            );
+            routes.MapRoute(
+                "Individual",                                              // Route name
+                "{controller}/{action}/{id}",                           // URL with parameters
+                new { controller = "Mock", action = "Individual", id = "" }  // Parameter defaults
             );
         }
     }
