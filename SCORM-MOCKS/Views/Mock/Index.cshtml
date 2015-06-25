@@ -11,8 +11,8 @@
             <small> - </small>
             <div class="btn-group">
                 <button class="btn btn-warning" type="button">
+                    <small class="label label-danger">4</small>
                     Scorm
-                    <small class="label label-danger">5</small>
                 </button>
                 <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle" type="button">
                     <span class="caret"></span>
@@ -20,12 +20,30 @@
                 </button>
                 <ul role="menu" class="dropdown-menu">
                     <li>
-                        @Html.ActionLink("Excel Basico", "General", "Mock",null)
+                        <a href='@Url.Action("General", "Mock")'>
+                            Excel Basico
+                            <span class="badge bg-red pull-right">65%</span>
+                        </a> 
                     </li>
-                    <li><a href="#">Share Point</a></li>
-                    <li><a href="#">Project</a></li>
+                    <li>
+                        <a href='@Url.Action("General", "Mock")'>
+                            Share Point
+                            <small class="badge bg-green pull-right">100%</small>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href='@Url.Action("General", "Mock")'>
+                            Project
+                            <small class="badge bg-green pull-right">80%</small>
+                        </a> 
+                    </li>
                     <li class="divider"></li>
-                    <li><a href="#">Examen No.7</a></li>
+                    <li>
+                        <a href='@Url.Action("Examen", "Mock")'>
+                            Examen No. 7
+                            <small class="badge bg-red pull-right">55%</small>
+                        </a> 
+                    </li>
                 </ul>
             </div>
         </h1>
@@ -60,9 +78,9 @@
                                 <td>@Html.ActionLink("Gilberto Tovar Nino", "Individual", "Mock", null)</td>
                                 <td class="text-center">093012</td>
                                 <td><div><strong>Activos</strong><ul class="list-unstyled"><li><p><i class="fa fa-paperclip"></i> <a href="javascript:Download('H:-Archivos9-Contenedor_290-','Hook Pre-Commit.txt','484_08-01-2015_12-18-06_5.txt');">Hook Pre-Commit.txt</a></p><p class="nx-calificacion-fecha-archivo-entregado">08 enero 2015, 12:18 <label class="archivo-fuera-tiempo">(Entregado fuera de tiempo)</label></p></li></ul></div></td>
-                                <td class="text-center"><a href="#"><span class="badge bg-blue">55%</span></a></td>
+                                <td class="text-center"><a href='@Url.Action("Individual", "Mock")'><span class="badge bg-red">55%</span></a></td>
                                 <td><ul class="list-unstyled"><li>examen junio 2013: <b>0</b></li><li>examen de prueba agosto 2013: <b>0</b></li><li>pruebaAgosto2013: <b>0</b></li></ul></td>
-                                <td class="text-center">@Html.ActionLink("80 %", "Individual", "Mock", null)</td>
+                                <td class="text-center">80</td>
                                 <td class="text-center">100</td>
                                 <td class="text-center">10/10</td>
                                 <td class="text-center"><a href="#"><i class="fa fa-comments-o fa-2x"></i></a></td>
@@ -71,7 +89,7 @@
                                 <td>Orozco Flores Rene</td>
                                 <td class="text-center">093012</td>
                                 <td><div><strong>Activos</strong><ul class="list-unstyled"><li><p><i class="fa fa-paperclip"></i> <a href="javascript:Download('H:-Archivos9-Contenedor_290-','Hook Pre-Commit.txt','484_08-01-2015_12-18-06_5.txt');">Hook Pre-Commit.txt</a></p><p class="nx-calificacion-fecha-archivo-entregado">08 enero 2015, 12:18 <label class="archivo-fuera-tiempo">(Entregado fuera de tiempo)</label></p></li></ul></div></td>
-                                <td class="text-center"><span class="badge bg-blue">55%</span></td>
+                                <td class="text-center"><span class="badge bg-green">75%</span></td>
                                 <td><ul class="list-unstyled"><li>examen junio 2013: <b>0</b></li><li>examen de prueba agosto 2013: <b>0</b></li><li>pruebaAgosto2013: <b>0</b></li></ul></td>
                                 <td class="text-center">80</td>
                                 <td class="text-center">100</td>
@@ -82,7 +100,7 @@
                                 <td>Trevino Uribe Jessica</td>
                                 <td class="text-center">093012</td>
                                 <td><div><strong>Activos</strong><ul class="list-unstyled"><li><p><i class="fa fa-paperclip"></i> <a href="javascript:Download('H:-Archivos9-Contenedor_290-','Hook Pre-Commit.txt','484_08-01-2015_12-18-06_5.txt');">Hook Pre-Commit.txt</a></p><p class="nx-calificacion-fecha-archivo-entregado">08 enero 2015, 12:18 <label class="archivo-fuera-tiempo">(Entregado fuera de tiempo)</label></p></li></ul></div></td>
-                                <td class="text-center"><span class="badge bg-blue">55%</span></td>
+                                <td class="text-center"><span class="badge bg-green">85%</span></td>
                                 <td><ul class="list-unstyled"><li>examen junio 2013: <b>0</b></li><li>examen de prueba agosto 2013: <b>0</b></li><li>pruebaAgosto2013: <b>0</b></li></ul></td>
                                 <td class="text-center">80</td>
                                 <td class="text-center">100</td>
@@ -93,7 +111,7 @@
                                 <td>Carrera Reyes Ofelia Patricia</td>
                                 <td class="text-center">093012</td>
                                 <td><div><strong>Activos</strong><ul class="list-unstyled"><li><p><i class="fa fa-paperclip"></i> <a href="javascript:Download('H:-Archivos9-Contenedor_290-','Hook Pre-Commit.txt','484_08-01-2015_12-18-06_5.txt');">Hook Pre-Commit.txt</a></p><p class="nx-calificacion-fecha-archivo-entregado">08 enero 2015, 12:18 <label class="archivo-fuera-tiempo">(Entregado fuera de tiempo)</label></p></li></ul></div></td>
-                                <td class="text-center"><span class="badge bg-blue">55%</span></td>
+                                <td class="text-center"><span class="badge bg-green">95%</span></td>
                                 <td><ul class="list-unstyled"><li>examen junio 2013: <b>0</b></li><li>examen de prueba agosto 2013: <b>0</b></li><li>pruebaAgosto2013: <b>0</b></li></ul></td>
                                 <td class="text-center">80</td>
                                 <td class="text-center">100</td>
@@ -104,7 +122,7 @@
                                 <td>Silva Zamarripa Jose Joel</td>
                                 <td class="text-center">093012</td>
                                 <td><div><strong>Activos</strong><ul class="list-unstyled"><li><p><i class="fa fa-paperclip"></i> <a href="javascript:Download('H:-Archivos9-Contenedor_290-','Hook Pre-Commit.txt','484_08-01-2015_12-18-06_5.txt');">Hook Pre-Commit.txt</a></p><p class="nx-calificacion-fecha-archivo-entregado">08 enero 2015, 12:18 <label class="archivo-fuera-tiempo">(Entregado fuera de tiempo)</label></p></li></ul></div></td>
-                                <td class="text-center"><span class="badge bg-blue">55%</span></td>
+                                <td class="text-center"><span class="badge bg-green">100%</span></td>
                                 <td><ul class="list-unstyled"><li>examen junio 2013: <b>0</b></li><li>examen de prueba agosto 2013: <b>0</b></li><li>pruebaAgosto2013: <b>0</b></li></ul></td>
                                 <td class="text-center">80</td>
                                 <td class="text-center">100</td>
@@ -115,7 +133,7 @@
                                 <td>Punte Nunez Kimberly</td>
                                 <td class="text-center">093012</td>
                                 <td><div><strong>Activos</strong><ul class="list-unstyled"><li><p><i class="fa fa-paperclip"></i> <a href="javascript:Download('H:-Archivos9-Contenedor_290-','Hook Pre-Commit.txt','484_08-01-2015_12-18-06_5.txt');">Hook Pre-Commit.txt</a></p><p class="nx-calificacion-fecha-archivo-entregado">08 enero 2015, 12:18 <label class="archivo-fuera-tiempo">(Entregado fuera de tiempo)</label></p></li></ul></div></td>
-                                <td class="text-center"><span class="badge bg-blue">55%</span></td>
+                                <td class="text-center"><span class="badge bg-red">60%</span></td>
                                 <td><ul class="list-unstyled"><li>examen junio 2013: <b>0</b></li><li>examen de prueba agosto 2013: <b>0</b></li><li>pruebaAgosto2013: <b>0</b></li></ul></td>
                                 <td class="text-center">80</td>
                                 <td class="text-center">100</td>
@@ -126,7 +144,7 @@
                                 <td>Sanchez Flores Javier</td>
                                 <td class="text-center">093012</td>
                                 <td><div><strong>Activos</strong><ul class="list-unstyled"><li><p><i class="fa fa-paperclip"></i> <a href="javascript:Download('H:-Archivos9-Contenedor_290-','Hook Pre-Commit.txt','484_08-01-2015_12-18-06_5.txt');">Hook Pre-Commit.txt</a></p><p class="nx-calificacion-fecha-archivo-entregado">08 enero 2015, 12:18 <label class="archivo-fuera-tiempo">(Entregado fuera de tiempo)</label></p></li></ul></div></td>
-                                <td class="text-center"><span class="badge bg-blue">55%</span></td>
+                                <td class="text-center"><span class="badge bg-green">85%</span></td>
                                 <td><ul class="list-unstyled"><li>examen junio 2013: <b>0</b></li><li>examen de prueba agosto 2013: <b>0</b></li><li>pruebaAgosto2013: <b>0</b></li></ul></td>
                                 <td class="text-center">80</td>
                                 <td class="text-center">100</td>

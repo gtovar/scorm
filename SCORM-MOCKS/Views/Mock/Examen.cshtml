@@ -1,11 +1,11 @@
 ﻿@{
-    ViewBag.Title = "Excel Basico";
+    ViewBag.Title = "Examen No. 7";
 }
 
 <aside class="right-side">
     <section class="content-header">
         <h1>
-            Excel Basico <small>SCORM GENERAL</small>
+            Examen No. 7 <small>SCORM GENERAL</small>
         </h1>
     </section>
     
@@ -29,11 +29,11 @@
 
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-blue">
+                                <div class="small-box bg-green">
                                     <div class="inner">
                                             
                                         <h3>
-                                           @Html.ActionLink("Excel Basico", "General", "Mock", new {@style = "color: white;"})
+                                           @Html.ActionLink("Excel Basico", "General", "Mock", new { @style = "color: white;" })
                                         </h3>
                                         <p>92 Empezaron</p>
                                         <p>25% Completaron</p>
@@ -43,7 +43,7 @@
                                     <div class="icon">
                                         <i class="ion ion-checkmark-circled"></i>
                                     </div>
-                                    <a class="small-box-footer" href='@Url.Action("General", "Mock")'>
+                                    <a class="small-box-footer" href='@Url.Action("Individual", "Mock")'>
                                         mas informacion <i class="fa fa-arrow-circle-right"></i>
                                     </a>
                                 </div>
@@ -52,7 +52,7 @@
 
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-red">
+                                <div class="small-box bg-blue">
                                     <div class="inner">
                                         <h3>
                                             @Html.ActionLink("Examen No. 7", "Examen", "Mock", new { @style = "color: white;" })
@@ -65,7 +65,7 @@
                                     <div class="icon">
                                         <i class="ion ion-close-circled"></i>
                                     </div>
-                                    <a class="small-box-footer" href='@Url.Action("Examen", "Mock")'>
+                                    <a class="small-box-footer" href='@Url.Action("Individual_Examen", "Mock")'>
                                         mas informacion <i class="fa fa-arrow-circle-right"></i>
                                     </a>
                                 </div>
@@ -108,7 +108,7 @@
                                         <p>62% Calificacion Promedio</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="ion ion-ios7-alarm-outline"></i>
+                                        <i class="ion ion-checkmark-circled"></i>
                                     </div>
                                     <a class="small-box-footer" href="#">
                                         mas informacion <i class="fa fa-arrow-circle-right"></i>
@@ -128,7 +128,7 @@
                 <div class="box">
                     
                     <div class="box-header">
-                        <h3 class="box-title">Alumnos - Excel Basico </h3>
+                        <h3 class="box-title">Alumnos - Examen No. 7 </h3>
                     </div>
 
                     <div class="box-body">
@@ -146,19 +146,19 @@
                                 </tr>
                                 <tr>
                                     <td>@Html.ActionLink("Gilberto Tovar Nino", "Individual", "Mock", null)</td>
-                                    <td class="text-center"><a href="#"><span class="badge bg-red">55%</span></a></td>
+                                    <td class="text-center"><a href="#"><span class="badge bg-blue">55%</span></a></td>
                                     <td class="text-center">Completado</td>
                                     <td class="text-center">1 hr.</td>
                                     <td class="text-center">25/Jun/2015</td>
                                     <td class="text-center">
                                         <button class="btn btn-default">Respuestas</button>
-                                        @Html.ActionLink("Secuencia", "Individual", "Mock", new { @class = "btn btn-success" })
+                                        <button class="btn btn-success">Secuencia</button>
                                     </td>
                                 </tr>
                                 
                                 <tr>
                                     <td>@Html.ActionLink("Orozco Flores Rene", "Individual", "Mock", null)</td>
-                                    <td class="text-center"><a href="#"><span class="badge bg-green">80%</span></a></td>
+                                    <td class="text-center"><a href="#"><span class="badge bg-blue">55%</span></a></td>
                                     <td class="text-center">Completado</td>
                                     <td class="text-center">1 hr.</td>
                                     <td class="text-center">25/Jun/2015</td>
@@ -169,7 +169,7 @@
                                 </tr>
                                 <tr>
                                     <td>@Html.ActionLink("Trevino Uribe Jessica", "Individual", "Mock", null)</td>
-                                    <td class="text-center"><a href="#"><span class="badge bg-green">93%</span></a></td>
+                                    <td class="text-center"><a href="#"><span class="badge bg-blue">55%</span></a></td>
                                     <td class="text-center">Completado</td>
                                     <td class="text-center">1 hr.</td>
                                     <td class="text-center">25/Jun/2015</td>
@@ -181,7 +181,7 @@
 
                                 <tr>
                                     <td>@Html.ActionLink("Carrera Reyes Ofelia", "Individual", "Mock", null)</td>
-                                    <td class="text-center"><a href="#"><span class="badge bg-green">72%</span></a></td>
+                                    <td class="text-center"><a href="#"><span class="badge bg-blue">55%</span></a></td>
                                     <td class="text-center">Completado</td>
                                     <td class="text-center">1 hr.</td>
                                     <td class="text-center">25/Jun/2015</td>
@@ -192,7 +192,7 @@
                                 </tr>
                                 <tr>
                                     <td>@Html.ActionLink("Silva Zamarripa Joel", "Individual", "Mock", null)</td>
-                                    <td class="text-center"><a href="#"><span class="badge bg-green">80%</span></a></td>
+                                    <td class="text-center"><a href="#"><span class="badge bg-blue">55%</span></a></td>
                                     <td class="text-center">Completado</td>
                                     <td class="text-center">1 hr.</td>
                                     <td class="text-center">25/Jun/2015</td>
@@ -203,7 +203,7 @@
                                 </tr>
                                 <tr>
                                     <td>@Html.ActionLink("Punte Nunez Kimberly", "Individual", "Mock", null)</td>
-                                    <td class="text-center"><a href="#"><span class="badge bg-red">60%</span></a></td>
+                                    <td class="text-center"><a href="#"><span class="badge bg-blue">55%</span></a></td>
                                     <td class="text-center">Completado</td>
                                     <td class="text-center">1 hr.</td>
                                     <td class="text-center">25/Jun/2015</td>
@@ -214,7 +214,7 @@
                                 </tr>
                                 <tr>
                                     <td>@Html.ActionLink("Sanchez Flores Javier", "Individual", "Mock", null)</td>
-                                    <td class="text-center"><a href="#"><span class="badge bg-green">100%</span></a></td>
+                                    <td class="text-center"><a href="#"><span class="badge bg-blue">55%</span></a></td>
                                     <td class="text-center">Completado</td>
                                     <td class="text-center">1 hr.</td>
                                     <td class="text-center">25/Jun/2015</td>

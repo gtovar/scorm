@@ -156,6 +156,8 @@
     <Content Include="Views\Mock\Index.cshtml" />
     <Content Include="Views\Mock\General.cshtml" />
     <Content Include="Views\Mock\Individual.cshtml" />
+    <Content Include="Views\Mock\Examen.cshtml" />
+    <Content Include="Views\Mock\Individual_Examen.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

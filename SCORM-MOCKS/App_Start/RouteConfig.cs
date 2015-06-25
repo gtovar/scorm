@@ -28,6 +28,16 @@ namespace SCORM_MOCKS
                 "{controller}/{action}/{id}",                           // URL with parameters
                 new { controller = "Mock", action = "Individual", id = "" }  // Parameter defaults
             );
+            routes.MapRoute(
+                "Examen",                                              // Route name
+                "{controller}/{action}/{id}",                           // URL with parameters
+                new { controller = "Mock", action = "Examen", id = "" }  // Parameter defaults
+            );
+            routes.MapRoute(
+                "IndividualExamen",                                              // Route name
+                "{controller}/{action}/{id}",                           // URL with parameters
+                new { controller = "Mock", action = "Individual_Examen", id = "" }  // Parameter defaults
+            );
         }
     }
 }
