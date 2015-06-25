@@ -6,10 +6,10 @@
     <section class="content-header">
         <h1>
             Gilberto Tovar Nino - Excel Basico
-             <small class="label label-danger">Puntaje 80% </small>
-             <small class="label label-info">Completado</small>
-             <small class="label label-warning">Tiempo 3hrs</small>
-             <small class="label label-success">Inicio 25/Jun/2015</small>
+            <span class="btn btn-success btn-flat">Puntaje 80% </span>
+            <span class="btn btn-success btn-flat">Completado</span>
+            <span class="btn btn-success btn-flat">Tiempo 3hrs</span>
+            <span class="btn btn-success btn-flat">Inicio 25/Jun/2015</span>
         </h1>
     </section>
 
@@ -49,8 +49,9 @@
                                     </div>
                                     <div class="inner">
                                         
-                                        <a class="btn btn-default btn-flat" href="#">
-                                            SECUENCIA <i class="fa fa-list-alt"></i> </a>
+                                        <a class="btn btn-default btn-flat" href='@Url.Action("Individual","Mock")'>
+                                            SECUENCIA <i class="fa fa-list-alt"></i>
+                                        </a>
                                         <a class="btn btn-default btn-flat" href="#">
                                             RESPUESTAS <i class="fa fa-check-square"></i> </a>
                                     </div>
@@ -178,13 +179,66 @@
                             <tbody>
                                 <tr style="background-color: #1570a6; color: #fff;">
                                     <th class="text-center">#</th>
-                                    <th class="text-center">Accion</th>
-                                    <th class="text-center">Actividad</th>
+                                    <th class="text-center">Time</th>
+                                    <th class="text-center">Event Type</th>
+                                    <th class="text-center">Navigation Command</th>
+                                    <th class="text-center">Message</th>
                                 </tr>
                                 <tr>
                                     <td class="text-center">1</td>
-                                    <td class="text-center">Entro</td>
-                                    <td class="text-center">Actividad 1 - Conoce la ventana</td>
+                                    <td class="text-center">6/8/2015 6:47 PM</td>
+                                    <td class="text-center">FinalNavigation</td>
+                                    <td class="text-center">ExitAll</td>
+                                    <td>Navigation complete. No current activity.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">6/8/2015 6:47 PM</td>
+                                    <td class="text-center">Rollup</td>
+                                    <td class="text-center">ExitAll</td>
+                                    <td>Rollup setting normalized measure to 0.6 for activity 'golf_sample_default_org'.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">6/8/2015 6:47 PM</td>
+                                    <td class="text-center">Rollup</td>
+                                    <td class="text-center">ExitAll</td>
+                                    <td>Rollup initiated for activity 'golf_sample_default_org'.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center">6/8/2015 6:47 PM</td>
+                                    <td class="text-center">Rollup</td>
+                                    <td class="text-center">ExitAll</td>
+                                    <td>Rollup initiated for activity 'golf_sample_default_org'.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">6/8/2015 6:47 PM</td>
+                                    <td class="text-center">Rollup</td>
+                                    <td class="text-center">ExitAll</td>
+                                    <td>Rollup setting normalized measure to 0.6 for activity 'golf_sample_default_org'.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">6</td>
+                                    <td class="text-center">6/8/2015 6:47 PM</td>
+                                    <td class="text-center">Rollup</td>
+                                    <td class="text-center">ExitAll</td>
+                                    <td>Rollup initiated for activity 'item_1'.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">7</td>
+                                    <td class="text-center">6/8/2015 6:47 PM</td>
+                                    <td class="text-center">FinalNavigation</td>
+                                    <td class="text-center">Start</td>
+                                    <td>Navigation resulted in making 'item_1' the current active activity.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">8</td>
+                                    <td class="text-center">6/8/2015 6:47 PM</td>
+                                    <td class="text-center">FinalNavigation</td>
+                                    <td class="text-center">Start</td>
+                                    <td>Navigation resulted in making 'item_1' the current active activity.</td>
                                 </tr>
                             </tbody>
                         </table>
