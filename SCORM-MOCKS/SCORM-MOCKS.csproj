@@ -158,6 +158,8 @@
     <Content Include="Views\Mock\Individual.cshtml" />
     <Content Include="Views\Mock\Examen.cshtml" />
     <Content Include="Views\Mock\Individual_Examen.cshtml" />
+    <Content Include="Views\Shared\_DropDownList.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

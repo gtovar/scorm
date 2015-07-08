@@ -2,34 +2,109 @@
     ViewBag.Title = "Alumno - Gilberto Tovar Nino";
 }
 
-<aside class="right-side">
+<aside class="right-side strech">
+
     <section class="content-header">
-        <h1>
-            Gilberto Tovar Nino - Excel Basico
-            <span class="btn btn-success btn-flat">Puntaje 80% </span>
-            <span class="btn btn-success btn-flat">Completado</span>
-            <span class="btn btn-success btn-flat">Tiempo 3hrs</span>
-            <span class="btn btn-success btn-flat">Inicio 25/Jun/2015</span>
-        </h1>
+        <h1>Portafolio</h1>
     </section>
 
 
-    <section class="content">
+    @Html.Partial(partialViewName: "_Menu")
+
+
+    <section class="content invoice">
+
+
         <div class="row">
 
-            <div class="col-md-9">
+            <div class="col-md-10">
                 <!-- Default box -->
-                <div class="box collapsed-box">
+                <div class="box box-success">
                     <div class="box-header">
-                        <h3 class="box-title">Objetos</h3>
+
+                        <i class="fa fa-user"></i>
+                        <h1 class="box-title">Gilberto Tovar</h1>
+
                         <div class="box-tools pull-right">
                             <button title="" data-toggle="tooltip" data-widget="collapse" class="btn btn-default btn-sm" data-original-title="Collapse"><i class="fa fa-plus"></i></button>
                             <button title="" data-toggle="tooltip" data-widget="remove" class="btn btn-default btn-sm" data-original-title="Remove"><i class="fa fa-times"></i></button>
                         </div>
                     </div>
-                    <div class="box-body" style="display: none;">
+                    <div class="box-body">
+
 
                         <div class="row">
+                            <div class="col-lg-3 col-xs-1">
+                                <!-- small box -->
+                                <div class="small-box bg-gold">
+                                    <div class="inner">
+
+                                        <h3>80%</h3>
+                                        <p>Puntaje</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-stats-bars"></i>
+                                    </div>
+                                        <br/>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-3 col-xs-1">
+                                <!-- small box -->
+                                <div class="small-box bg-gold">
+                                    <div class="inner">
+
+                                        <h3>100%</h3>
+                                        <p>Completado</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-checkmark"></i>
+                                    </div>
+                                        <br/>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-3 col-xs-1">
+                                <!-- small box -->
+                                <div class="small-box bg-gold">
+                                    <div class="inner">
+
+                                        <h3>3 hrs.</h3>
+                                        <p>Tiempo</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-ios7-clock"></i>
+                                    </div>
+                                        <br/>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-xs-1">
+                                <!-- small box -->
+                                <div class="small-box bg-gold">
+                                    <div class="inner">
+
+                                        <h3>25 Jun 2015</h3>
+                                        <p>Fecha de Inicio</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-calendar"></i>
+                                    </div>
+                                        <br/>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <h2 class="page-header">
+                                    <i class="fa fa-bar-chart-o"></i> Objetos SCORM <small class="pull-right">Date: 2/10/2014</small>
+                                </h2>
+                            </div>
 
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
@@ -48,12 +123,13 @@
                                         <i class="ion ion-checkmark-circled"></i>
                                     </div>
                                     <div class="inner">
-                                        
+
                                         <a class="btn btn-default btn-flat" href='@Url.Action("Individual","Mock")'>
                                             SECUENCIA <i class="fa fa-list-alt"></i>
                                         </a>
                                         <a class="btn btn-default btn-flat" href="#">
-                                            RESPUESTAS <i class="fa fa-check-square"></i> </a>
+                                            RESPUESTAS <i class="fa fa-check-square"></i>
+                                        </a>
                                     </div>
                                     <a class="small-box-footer" href='@Url.Action("Individual", "Mock")'>
                                         mas informacion <i class="fa fa-arrow-circle-right"></i>
@@ -67,7 +143,7 @@
                                 <div class="small-box bg-red">
                                     <div class="inner">
                                         <h3>
-                                            @Html.ActionLink("Examen No. 7", "Individual_Examen", "Mock", new {@style = "color: white;"})
+                                            @Html.ActionLink("Examen No. 7", "Individual_Examen", "Mock", new { @style = "color: white;" })
                                         </h3>
                                         <p>25% Completado</p>
                                         <p>Inicio 18/Jun/2015</p>
@@ -161,15 +237,18 @@
                 </div><!-- /.box -->
             </div>
 
+        </div>
 
+        <div class="row">
 
-            <div class="col-md-9">
-                <div class="box">
+            <div class="col-md-10">
+                <div class="box box-warning">
 
                     <div class="box-header">
-                        <h3 class="box-title">SECUENCIA - Excel Basico
-                         </h3>
-                         <button class="margin btn btn-danger btn-flat pull-right">Ver respuestas</button>
+                        <h3 class="box-title">
+                            SECUENCIA - Excel Basico
+                        </h3>
+                        <button class="margin btn btn-danger btn-flat pull-right">Ver respuestas</button>
                     </div>
 
                     <div class="box-body">
@@ -246,9 +325,8 @@
 
                 </div>
             </div>
-        </div>
 
+        </div>
     </section>
 
 </aside>
-
