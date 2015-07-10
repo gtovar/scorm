@@ -2,41 +2,77 @@
     ViewBag.Title = "Excel Basico";
 }
 
-<aside class="right-side">
+<aside class="right-side strech">
     <section class="content-header">
         <h1>
-            Excel Basico <small>SCORM GENERAL</small>
+            PORTAFOLIO
         </h1>
     </section>
     
     
     @Html.Partial(partialViewName: "_Menu")
 
-    <section class="content">
+    <section class="content invoice">
+        <h4 class="page-header">
+            EXCEL BASICO <small> <i class="fa fa-arrow-right fa-lg"></i>
+                Evidencia # 4
+            </small>
+        </h4>
         <div class="row">
             
             <div class="col-md-9">
                 <!-- Default box -->
-                <div class="box collapsed-box">
+                <div class="box box-danger">
                     <div class="box-header">
-                        <h3 class="box-title">Objetos</h3>
-                        <div class="box-tools pull-right">
-                            <button title="" data-toggle="tooltip" data-widget="collapse" class="btn btn-default btn-sm" data-original-title="Collapse"><i class="fa fa-plus"></i></button>
-                            <button title="" data-toggle="tooltip" data-widget="remove" class="btn btn-default btn-sm" data-original-title="Remove"><i class="fa fa-times"></i></button>
+                        <div class="col-md-1">
+                            <h3 class="box-title">Opciones</h3>
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-control margin" name="ddlver">
+                                <option value="-1">Seleccionar Vista</option>
+                                <option value="5">Todo</option>
+                                <option value="0">Alumnos</option>
+                                <option value="1" selected="selected">Evidencia de Aprendizaje</option>
+                                <option value="2">Elemento Complementario de Evaluación</option>
+                                <option value="3">Producto Integrador de Aprendizaje</option>
+                                <option value="4">Calificaciones</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-control margin" name="ddlver">
+                                <option value="-1">Seleccionar Vista</option>
+                                <option value="5">Todo</option>
+                                <option value="0">Alumnos</option>
+                                <option value="1" selected="selected">Evidencia de Aprendizaje</option>
+                                <option value="2">Elemento Complementario de Evaluación</option>
+                                <option value="3">Producto Integrador de Aprendizaje</option>
+                                <option value="4">Calificaciones</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-control margin" name="ddlGrupoEvi">
+                                <option value="0" selected="selected">Seleccionar Grupo</option>
+                                <option value="12220">101</option>
+                                <option value="12221">102</option>
+                                <option value="80314">5</option>
+                            </select>
+                        </div>
+                        <div class="box-tools pull-right ">
+                            <button data-original-title="Collapse" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip" title=""><i class="fa fa-plus"></i></button>
+                            <button data-original-title="Remove" class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip" title=""><i class="fa fa-times"></i></button>
                         </div>
                     </div>
-
                     <div class="box-body" >
                        
                         <div class="row">
 
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-blue">
+                                <div class="small-box bg-green">
                                     <div class="inner">
                                             
                                         <h3>
-                                           @Html.ActionLink("Excel Basico", "General", "Mock", new {@style = "color: white;"})
+                                            @Html.ActionLink("Excel Basico", "General", "Mock", new {@style = "color: white;"})
                                         </h3>
                                         <p>92 Empezaron</p>
                                         <p>25% Completaron</p>
@@ -46,7 +82,10 @@
                                     <div class="icon">
                                         <i class="ion ion-checkmark-circled"></i>
                                     </div>
-                                    <a class="small-box-footer" href='@Url.Action("General", "Mock")'>
+                                    
+                                
+
+                                    <a class="small-box-footer box-active bg-blue no-margin" style=""  href='@Url.Action("General", "Mock")'>
                                         mas informacion <i class="fa fa-arrow-circle-right"></i>
                                     </a>
                                 </div>
@@ -99,7 +138,7 @@
 
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-green">
+                                <div class="small-box bg-gold">
                                     <div class="inner">
                                             
                                         <h3>
@@ -111,7 +150,7 @@
                                         <p>62% Calificacion Promedio</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="ion ion-ios7-alarm-outline"></i>
+                                        <i class="ion ion-clock"></i>
                                     </div>
                                     <a class="small-box-footer" href="#">
                                         mas informacion <i class="fa fa-arrow-circle-right"></i>
@@ -128,10 +167,15 @@
 
 
             <div class="col-md-9">
-                <div class="box">
+                <div class="box box-danger">
                     
                     <div class="box-header">
-                        <h3 class="box-title">Alumnos - Excel Basico </h3>
+                        <h3 class="box-title"><i class="fa fa-arrow-right fa-lg"></i>
+                Alumnos </h3>
+                        <div class="box-tools pull-right">
+                            <button title="" data-toggle="tooltip" data-widget="collapse" class="btn btn-danger btn-sm" data-original-title="Collapse"><i class="fa fa-minus"></i></button>
+                            <button title="" data-toggle="tooltip" data-widget="remove" class="btn btn-danger btn-sm" data-original-title="Remove"><i class="fa fa-times"></i></button>
+                        </div>
                     </div>
 
                     <div class="box-body">
@@ -139,7 +183,7 @@
 
                         <table class="table">
                             <tbody>
-                                <tr style="background-color: #1570a6; color: #fff;">
+                                <tr class="bg-blue" >
                                     <th class="text-center">Nombre</th>
                                     <th class="text-center">Puntaje</th>
                                     <th class="text-center">Estado</th>

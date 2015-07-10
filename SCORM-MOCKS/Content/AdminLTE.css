@@ -148,7 +148,7 @@ h6,
 }
 /* All images should be responsive */
 img {
-  max-width: 100%important;
+  max-width: 100% !important;
 }
 .sort-highlight {
   background: #f4f4f4;
@@ -1235,7 +1235,7 @@ body > .header .logo .icon {
 }
 .small-box h3,
 .small-box p {
-  z-index: 5px;
+  z-index: 5;
 }
 .small-box .icon {
   position: absolute;
@@ -1323,6 +1323,9 @@ body > .header .logo .icon {
 }
 .box.box-success {
   border-top-color: #00a65a;
+}
+.box.box-blue {
+  border-top-color: #3D64A5;
 }
 .box.height-control .box-body {
   max-height: 300px;
@@ -1477,6 +1480,14 @@ body > .header .logo .icon {
   background-color: #3c8dbc;
 }
 .box.box-solid.box-primary > .box-header a {
+  color: #444;
+}
+.box.box-solid.box-blue > .box-header {
+  color: #fff;
+  background: #3D64A5;
+  background-color: #3D64A5;
+}
+.box.box-solid.box-blue > .box-header a {
   color: #444;
 }
 .box.box-solid.box-info > .box-header {
